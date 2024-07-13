@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Website Title ========== -->
+    <title>Yummy</title>
+    <!-- ========== Website Icon ========== -->
+    <link rel="icon" href="images/logo.png">
+    <!-- ========== FontAwesome Link ========== -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ========== Bootstrap CSS Link ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ========== CSS External Link ========== -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ========== loading Part ========== -->
+        <section class="loading" id="loading">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </section>
+
+        <!-- ========== sideNav Part ========== -->
+        <aside id="sideBar">
+            <div class="inner-side ">
+                <div>
+                    <ul class="list-unstyled links mt-5">
+                        <li onclick="searchInputsValues();sideClosed()" id="searchLink" class="link-item"><a
+                                class="text-capitalize" href="#">search</a></li>
+                        <li onclick="getCategories();sideClosed()" id="categoryLink" class="link-item"><a
+                                class="text-capitalize" href="#">categories</a></li>
+                        <li onclick="getAllAreas();sideClosed()" class="link-item"><a class="text-capitalize"
+                                href="#">area</a></li>
+                        <li onclick="getIngredients();sideClosed()" class="link-item"><a class="text-capitalize"
+                                href="#">ingredients</a></li>
+                        <li onclick="displayContact();sideClosed()" class="link-item"><a class="text-capitalize"
+                                href="#">contact us</a></li>
+                    </ul>
+
+                </div>
+                <div class="social-icons ">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="copyright">Copyright Â&copy; 2024 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <!-- ========== Outer Part ========== -->
+            <div class="outer-side">
+                <div class="logo">
+                    <img src="images/logo.png" alt="yummy-img">
+                </div>
+                <div id="closeBtn">
+                    <i class="fa fa-x x-icon fa-2x d-none"></i>
+                    <i class="fa-solid bar-icon fa-align-justify fa-2x"></i>
+                </div>
+                <div class="outer-links d-flex flex-column">
+                    <i class="fa-solid fa-globe pb-1"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+        <!-- ========== Search Part ========== -->
+        <section class="container w-75" id="search">
+        </section>
+
+        <!-- ========== Inner Part ========== -->
+        <section class="min-vh-100 position-relative">
+            <div class="inner-loading">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+            <div class="container">
+                <div class="row py-5 g-4 " id="allData">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== JQuery Link ========== -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ========== Bootstrap JS link ========== -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ========== JS External Link ========== -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
