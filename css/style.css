@@ -92,7 +92,9 @@ i{
 .loading,.inner-loading i{
     color: var(--secondary-color);
 }
-
+.icon{
+    color: var(--main-color);
+}
 .card-layer{
     position: absolute;
     background-color: var(--bd-rgba-color);
